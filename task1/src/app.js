@@ -15,8 +15,6 @@ app.use("/api/upload", uploadRoutes);
 app.use("/api/policy", policyRoutes);
 app.use("/api/message", messageRoutes);
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
 cpuMonitor();
 
 module.exports = app;
